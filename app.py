@@ -8,7 +8,7 @@ with open("labels.txt", "r") as f:
     labels = f.read().splitlines()
 
 # Load TFLite model
-interpreter = tf.lite.Interpreter(model_path="plant_disease_model.tflite")
+interpreter = tf.lite.Interpreter(model_path="plant_disease_model(1).tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
